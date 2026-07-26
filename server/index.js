@@ -430,6 +430,7 @@ const server = http.createServer(async (req, res) => {
   if (p === '/api/following') { const key = (u.searchParams.get('wallet') || '').toLowerCase(); return json(res, 200, { following: db.followers[key] || [] }); }
 
   let f = p === '/' ? '/index.html' : p;
+  if (f === '/app') f = '/app.html';
   if (f === '/docs') f = '/docs.html';
   const file = path.join(CLIENT, f);
   if (!file.startsWith(CLIENT)) { res.writeHead(403); return res.end(); }
