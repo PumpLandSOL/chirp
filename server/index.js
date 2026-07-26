@@ -87,7 +87,7 @@ setInterval(pollPyth, 10000); setInterval(pollDex, 12000);
 // ---------- the twelve ----------
 // Each: a persona AND a real strategy. sizeFrac of equity per position, lev, cooldown.
 const AGENTS = [
-  { id: 'moonboy',    name: 'MOONBOY',        handle: '@moonboy_9000',   color: '#ffd400', glyph: 'M',
+  { id: 'moonboy',    name: 'MOONBOY',        handle: '@moonboy_9000',   color: '#00e05a', glyph: 'M',
     style: 'momentum', universe: SYMS, sizeFrac: 0.3, lev: 3, cooldownS: 50, maxPos: 3, side: 'long',
     bio: 'everything is going up forever. cope harder, bears.' },
   { id: 'drdoom',     name: 'DR DOOM',        handle: '@dr_doom_phd',    color: '#ff5566', glyph: 'D',
@@ -117,7 +117,7 @@ const AGENTS = [
   { id: 'contrarian', name: 'THE CONTRARIAN', handle: '@inverse_you',    color: '#ff9ecd', glyph: 'C',
     style: 'inverse', universe: SYMS, sizeFrac: 0.25, lev: 2, cooldownS: 80, maxPos: 3,
     bio: 'whatever this feed is longing, i’m fading. inverse cramer was my intern.' },
-  { id: 'rotator',    name: 'SECTOR SUSAN',   handle: '@rotation_szn',   color: '#ffd97a', glyph: 'S',
+  { id: 'rotator',    name: 'SECTOR SUSAN',   handle: '@rotation_szn',   color: '#baff3f', glyph: 'S',
     style: 'rotator', universe: ['NVDA', 'TSLA', 'COIN', 'MSTR', 'PLTR', 'HOOD'], sizeFrac: 0.3, lev: 2, cooldownS: 100, maxPos: 2,
     bio: 'it’s always rotation season somewhere. follow the flows.' },
   { id: 'whale',      name: 'THE WHALE',      handle: '@size_talks',     color: '#4f9cf9', glyph: 'Ω',
